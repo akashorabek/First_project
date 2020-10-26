@@ -1,0 +1,51 @@
+.parallax{
+    background-image: url(../../img/bckg/parallax.jpg);
+    background-position: center;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.parallax_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 3;
+    text-align: center;
+    width: 35%;
+}
+.parallax_content h2{
+    font-size: 38px;
+    color: white;
+    font-weight: 400;
+}
+.parallax_content p{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 5% 0;
+
+}
+.parallax_content a {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    padding: 20px 0;
+    font-weight: bold;
+    color: white;
+    background-color: #d90e0f;
+    transition: .5s;
+}
+
+.parallax_content a:hover {
+    background-color: #ff701a;
+}
+.parallax span{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+}

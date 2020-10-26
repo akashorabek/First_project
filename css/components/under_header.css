@@ -1,0 +1,91 @@
+
+.under_header {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.under_block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 600px;
+   
+}
+.under_block1 {
+    
+    background-image: url(../../img/bckg/slider-3.jpg);
+}
+.under_block2 {
+    background-image: url(../../img/bckg/slider-2.jpg);
+}
+.under_block3 {
+    background-image: url(../../img/bckg/silder-1.jpg);
+}
+
+.under_block p {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+
+.under_block h1 {
+    color: white;
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.slick-track {
+    display: flex;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+.under_header .slick-dots {
+    position: absolute;
+    right: 0;
+    
+}
+.under_header .slick-dots li {
+    margin-bottom: 10px;
+    margin-right: 50px;
+}
+.under_header .slick-dots li.slick-active button {
+    background-color: #d90e0f;
+}
+.under_header .slick-dots button  {
+    font-weight: 0;
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    opacity: .5;
+    transition: .4s;
+    outline: none;
+    border-style: none;
+}
+.under_block a {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    margin: 15px 0;
+    padding: 20px 0;
+    font-weight: bold;
+    color: white;
+    background-color: #d90e0f;
+    transition: .5s;
+}
+
+.under_block a:hover {
+    background-color: #ff701a;
+}
+

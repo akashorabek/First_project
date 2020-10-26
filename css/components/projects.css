@@ -1,0 +1,99 @@
+
+.project_content{
+    margin: 0 1.5%;
+    
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+}
+.projects_h2{
+    margin-top: 3%;
+    font-size: 42px;
+}
+.projects_tabs{
+    display: flex;
+    justify-content: space-between;
+    margin: 3%;
+    width: 30%;
+    
+}
+.projects_tabs>a{
+    font-size: 16px;
+    letter-spacing: .075em;
+    font-weight: bold;
+    color: #9b9b9b;
+    transition: .4s;
+}
+.projects_tabs>a:hover{
+    color: #ff701a;
+}
+.projects_imgs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.project_img{
+    position: relative;
+    width: 30%;
+    height: 300px;
+    margin: 1% 1%;
+    overflow: hidden;
+}
+.project_img:hover .project_inner{
+    transform: translate(10%, 10%);
+    opacity: 1;
+}
+.project_img:hover img{
+    transform: scale(1);
+}
+.project_img>img{
+    width: 100%;
+    height: 100%;
+    transform: scale(1.1);
+    transition: .3s;
+    object-fit: cover;
+}
+.project_inner{
+    position: absolute;
+    top: 0%;
+    bottom: 20%;
+    right: 20%;
+    left: 0%;
+    background-color: white;
+    padding: 12%;
+    transition: .3s;
+    opacity: 0;
+}
+.project_inner p{
+    color: rgb(78, 78, 78);
+    letter-spacing: .015em;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 8%;
+}
+.project_inner_icon_h{
+    display: flex;
+}
+.project_inner_icon_h>.fas{
+    font-size: 30px;
+    transition: .4s;
+    cursor: pointer;
+    color: black;
+}
+.project_inner_icon_h>.fas:hover{
+    color: #ff701a;
+}
+.project_inner_icon_h>.h2a{
+    font-size: 21px;
+    color: #d90e0f;
+    transition: .4s;
+    margin-left: 8%;
+}
+.project_inner_icon_h>.h2a:hover{
+    color: #ff701a;
+}
+.our_services{
+    font-size: 42px;
+    padding-top: 5%;
+}

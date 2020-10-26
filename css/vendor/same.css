@@ -1,0 +1,11 @@
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.animation_width{
+    width: calc(100% / 3 - 8%);
+    
+}
+.none{
+    display: block;
+}

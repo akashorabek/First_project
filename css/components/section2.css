@@ -1,0 +1,139 @@
+.section2{
+    height: 100%;
+    
+}
+
+.section2_content{
+    display: flex;
+    justify-content: space-between;
+    margin: 8% auto;
+}
+.section2_img_b{
+    width: 86%;
+    height: 98%;
+    border: 2px solid rgb(77, 76, 76);
+    position: absolute;
+    z-index: -1;
+    transform: translate(-20px, -20px);
+    transition: 400ms;
+}
+.section2_img_f{
+    transition: 400ms;
+    
+}
+.section2_imgs:hover .section2_img_b{
+    transform: translate(10px, 10px);
+}
+.section2_imgs:hover .section2_img_f{
+    transform: translate(-20px, -20px);
+    /* animation-name: img_move;
+    animation-duration: 1s; */
+}
+/* @keyframes img_move{
+    100%{
+        transform: translate(-20px, -20px);
+    }
+} */
+
+.section2_imgs{
+    position: relative;
+    padding: 0 3%;
+    width: 50%;
+    
+}
+.section2_imgs img{
+    width: 100%;
+    
+}
+.section2_service{
+    width: 50%;
+    padding: 0 3%;
+    margin-right: 5%;
+}
+
+.section2_h{
+    font-size: 42px;
+    margin: 3% 0;
+}
+.section2_tabs{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    padding: 3% 0;
+    position: relative;
+}
+.section2_tabs::before {
+    position: absolute;
+    bottom: 17px;
+    content: " ";
+    background-color: #b9b8b8;
+    height: 3px;
+    width: 100%;
+    z-index: -1;
+}
+.section2_tabs a{
+    color: #9b9b9b;
+    transition: .5s;
+    padding: 10px 0;
+    border-bottom: 4px solid transparent;
+}
+.section2_tabs a:hover{
+    color: #ff701a;
+    border-color: #ff701a;
+}
+.section2_p{
+    margin: 7% 0;
+    letter-spacing: .03em;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+
+}
+.section2_buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    position: relative;
+}
+.normal_btn{
+    padding: 15px 30px;
+    background-color: #ff701a;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: .1em;
+    color: white;
+    border: 2px solid transparent;
+    transition: .5s;
+}
+.normal_btn:hover{
+    color: black;
+    border-color: black;
+    background-color: white;
+}
+.active_btn{
+    padding: 15px 40px;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: .1em;
+    color: black;
+    border: 2px solid black;
+    transition: .5s;
+}
+.active_btn:hover{
+    color: #d90e0f;
+    border-color: #d90e0f;
+}
+.section2_tabs_p_buttons {
+    position: relative;
+}
+.section2_text {
+    display: none;
+}
+.active {
+    display: block;
+}
+.active_tabs {
+    color: #ff701a;
+    border-color: #ff701a;
+}
