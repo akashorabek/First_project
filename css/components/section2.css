@@ -80,7 +80,9 @@
 }
 .section2_tabs a:hover{
     color: #ff701a;
-    border-color: #ff701a;
+}
+.section2_tabs a.active {
+    color: #ff701a;
 }
 .section2_p{
     margin: 7% 0;

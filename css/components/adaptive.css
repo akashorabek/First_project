@@ -38,13 +38,58 @@
         display: none;
     }
     .logo{
+
+        position: fixed;
+        top: 0;
+        left: 0;
         height: 70px;
+        z-index: 2;
     }
     .numlogo{
-        display: none;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: -120px;
+        right: -100%;
+        width: 30%;
+        padding: 20px 0;
+        transition: .4s;
+        z-index: -10;
+    }
+    .numlogo.active_menu {
+        right: 0;
+    }
+    .num_icon {
+        margin-bottom: 20px;
+    }
+    .menu_burger {
+        display: block;
     }
     .topnav{
-        display: none;
+        position: fixed;
+        top: 0;
+        left: -120%;
+        width: 40%;
+        height: 100%;
+        padding-top: 80px;
+        padding-left: 15px;
+        padding-right: 15px;
+        transition: .6s;
+        overflow: auto;
+    }
+    .topnav.active_menu {
+        left: 0;
+    }
+    .topnav_ul {
+        display: block;
+    }
+    .topnav_ul_icon {
+        display: block;
+    }
+    .icon {
+        margin-top: 20px;
+        width: 100%;
     }
     .body_block{
         width: calc(100% / 2 - 25%);
@@ -171,6 +216,9 @@
     }
 }
 @media(max-width: 750px){
+    .numlogo {
+        width: 40%;
+    }
     .section2_buttons{
         width: 80%;
     }
@@ -203,6 +251,9 @@
     }
 }
 @media(max-width: 600px){
+    .topnav {
+        width: 60%;
+    }
     .section2_img_b{
         width: 82%;
     }
@@ -267,6 +318,9 @@
     }
 }
 @media(max-width: 500px){
+    .numlogo {
+        width: 50%;
+    } 
     .animation_width {
         width: calc(100% / 3 - 5%);
     }
@@ -290,7 +344,7 @@
         margin-bottom: 14%;
     }
     .section2_tabs{
-        font-size: 25px;
+        font-size: 19px;
     }
     .projects_tabs {
         width: 90%;
@@ -330,6 +384,9 @@
     }
 }
 @media(max-width: 400px){
+    .numlogo {
+        width: 60%;
+    } 
     .under_block a{
         width: 50%;
     }
@@ -337,6 +394,9 @@
         width: 50%;
     }
     .user_review{
+        width: 100%;
+    }
+    .topnav {
         width: 100%;
     }
 }

@@ -25,6 +25,9 @@
     color: #9b9b9b;
     transition: .4s;
 }
+.projects_tabs a.active {
+    color: #ff701a;
+}
 .projects_tabs>a:hover{
     color: #ff701a;
 }

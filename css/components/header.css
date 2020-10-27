@@ -1,4 +1,9 @@
-
+body.lock {
+    overflow: hidden;
+}
+header {
+    position: relative;
+}
 a {
     text-decoration: none;
 }
@@ -19,7 +24,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    background-color: white;
 }
 
 .mobile_icon{
@@ -28,11 +33,57 @@ body {
     
 }
 .mobile_bar.fas{
-    font-size: 30px;
+    font-size: 24px;
     margin: 5%;
     color: black;
+    transition: .4s;
 }
-
+.mobile_bar.fas.active_menu {
+    transform: rotate(90deg);
+}
+.menu_burger {
+    height: 20px;
+    width: 30px;
+    position: relative;
+    margin: 0 20px;
+    display: none;
+}
+.menu_burger.active_menu::before {
+    transform: rotate(45deg);
+    top: 9px;
+}
+.menu_burger.active_menu span {
+    transform: scale(0);
+}
+.menu_burger.active_menu::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+}
+.menu_burger::before,
+.menu_burger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    background-color: black;
+    height: 2px;
+    width: 100%;
+    transition: .4s;
+}
+.menu_burger::before {
+    top: 0;
+}
+.menu_burger span {
+    position: absolute;
+    left: 0;
+    top: 9px;
+    background-color: black;
+    height: 2px;
+    width: 100%;
+    transition: .4s;
+}
+.menu_burger::after {
+    bottom: 0;
+}
 
 .numlogo {
     width: 450px;
@@ -86,12 +137,11 @@ body {
 
 
 .topnav {
-    display: flex;
     height: 60px;
     background-color: #2d2f30;
-    position: sticky;
+    
     align-self: flex-start;
-    z-index: 10;
+    z-index: 1;
 }
 .mobile_bar.fas{
     display: none;
@@ -147,6 +197,7 @@ body {
     transition: .3s;
     transform: translateY(30px);
     left: 0%;
+    z-index: 3;
 }
 .sub_topnav_ul>li{
     padding: 10px 0;
@@ -168,6 +219,7 @@ body {
     transform: translateY(30px);
     width: 200px;
     left: 0%;
+    z-index: 3;
 }
 .sub_portfolio>li {
     padding: 10px 0;

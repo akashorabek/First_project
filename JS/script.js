@@ -1,4 +1,14 @@
 $(document).ready(function() {
+    $('.menu_burger').click(function(){
+        $('.menu_burger').toggleClass('active_menu');
+        $('.topnav').toggleClass('active_menu');
+        $('body').toggleClass('lock');
+    })
+    $('.mobile_bar.fas').click(function(){
+        $('.mobile_bar.fas').toggleClass('active_menu');
+        $('.numlogo').toggleClass('active_menu');
+        
+    })
     $('.under_header').slick({
         slidesToShow: 1,
         arrows: false,
@@ -38,6 +48,7 @@ $(document).ready(function() {
 
 });
 
+
 let section2Tabs = document.querySelectorAll('.section2_text');
 let section2links = document.querySelectorAll('.section2_tabs a');
 let projectTabs = document.querySelectorAll('.projects_tabs a');
@@ -50,7 +61,6 @@ function section2tabs() {
             removeActive ()
             e.preventDefault();
             section2Tabs[index].classList.add('active');
-            section2links[index].style.borderColor = '#ff701a';
             section2links[index].style.color = '#ff701a';
         });
     });
@@ -71,7 +81,7 @@ function projectsSort () {
             e.preventDefault();
             allBlock();
             removeProjectTabsColor();
-            item.style.color = '#ff701a'
+            item.classList.add('active');
         });
     });
     projectTabs[1].addEventListener('click', (e) => {
@@ -109,7 +119,7 @@ function allBlock() {
 }
 function removeProjectTabsColor() {
     projectTabs.forEach(item => {
-        item.style.color = '#9b9b9b'
+        item.classList.remove('active');
     });
     
 }
