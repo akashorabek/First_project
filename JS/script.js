@@ -15,7 +15,9 @@ $(document).ready(function() {
         dots: true,
         speed: 500,
         autoplay: true,
-        autoplaySpeed: 4500
+        autoplaySpeed: 4000,
+        pauseOnHover: false,
+
 
     });
     $('.body_allblocks').slick({
@@ -24,8 +26,8 @@ $(document).ready(function() {
         arrows: false,
         dots: false,
         speed: 500,
-        autoplay: false,
-        autoplaySpeed: 4500,
+        autoplay: true,
+        autoplaySpeed: 4000,
         responsive: [
             {
                 breakpoint: 1000,
