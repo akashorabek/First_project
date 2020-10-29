@@ -38,10 +38,10 @@
 }
 .project_img{
     position: relative;
-    width: 30%;
-    height: 300px;
-    margin: 1% 1%;
+    width: calc(100% / 4 - 3%);
     overflow: hidden;
+    margin: 15px 10px;
+    height: 300px;
 }
 .project_img:hover .project_inner{
     transform: translate(10%, 10%);
@@ -67,6 +67,7 @@
     padding: 12%;
     transition: .3s;
     opacity: 0;
+    overflow: scroll;
 }
 .project_inner p{
     color: rgb(78, 78, 78);

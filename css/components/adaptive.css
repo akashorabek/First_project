@@ -133,9 +133,7 @@
         margin-bottom: 5%;
     }
     
-    .project_img{
-        width: 45%;
-    }
+    
     .parallax_content a{
         width: 30%;
     }
@@ -214,8 +212,12 @@
     .footer_block:nth-child(3) h3{
         margin-right: 50px;
     }
+
 }
 @media(max-width: 750px){
+    .project_img {
+        width: 50%;
+    }
     .numlogo {
         width: 40%;
     }
@@ -251,6 +253,7 @@
     }
 }
 @media(max-width: 600px){
+
     .topnav {
         width: 60%;
     }
