@@ -1,6 +1,7 @@
 .parallax{
     background-image: url(../../img/bckg/parallax.jpg);
     background-position: center;
+    background-attachment: fixed;
     height: 350px;
     display: flex;
     align-items: center;
@@ -11,7 +12,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 3;
+    z-index: 1;
     text-align: center;
     width: 35%;
 }

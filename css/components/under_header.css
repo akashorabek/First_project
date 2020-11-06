@@ -72,6 +72,7 @@
     transition: .4s;
     outline: none;
     border-style: none;
+    cursor: pointer;
 }
 .under_block a {
     display: flex;

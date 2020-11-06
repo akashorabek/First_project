@@ -39,7 +39,8 @@ $(document).ready(function() {
             {
                 breakpoint: 700,
                 settings: {
-                    slidesToShow: 1
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
                 }
                 
             }
@@ -88,7 +89,7 @@ function projectsSort () {
     $('.projects_tabs a:nth-child(1)').click(function(){
         $('.project_img').fadeIn();
         $('.project_img').css({
-            width: 'calc(100% / 4 - 3%)'
+            width: 'calc(100% / 2 - 3%)'
         })
     })
     $('.projects_tabs a:nth-child(2)').click(function(){

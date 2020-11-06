@@ -67,7 +67,7 @@
     padding: 12%;
     transition: .3s;
     opacity: 0;
-    overflow: scroll;
+    overflow: auto;
 }
 .project_inner p{
     color: rgb(78, 78, 78);
