@@ -52,16 +52,7 @@ $(document).ready(function() {
 });
 
 
-$(window).scroll(function(){
-    let sticky = $('.topnav'),
-        scroll = $(window).scrollTop();
 
-    if (scroll >= 100) {
-        sticky.addClass('fixed');
-    } else {
-        sticky.removeClass('fixed');
-    }
-})
 
 let section2Tabs = document.querySelectorAll('.section2_text');
 let section2links = document.querySelectorAll('.section2_tabs a');

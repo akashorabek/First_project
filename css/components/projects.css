@@ -38,7 +38,7 @@
 }
 .project_img{
     position: relative;
-    width: calc(100% / 4 - 3%);
+    width: calc(100% / 2 - 3%);
     overflow: hidden;
     margin: 15px 10px;
     height: 300px;
@@ -67,7 +67,6 @@
     padding: 12%;
     transition: .3s;
     opacity: 0;
-    overflow: auto;
 }
 .project_inner p{
     color: rgb(78, 78, 78);
